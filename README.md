@@ -9,5 +9,5 @@ This jekyll site is a replacement for [github.com/FH-Potsdam/is-the-lab-open](ht
 
 ## Why?
 
-Because Fabian Morón Zirfas is moving on?
+Because Fabian Morón Zirfas is moving on.
 
