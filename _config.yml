@@ -1,0 +1,5 @@
+baseurl: /is-the-lab-open # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Build settings
+markdown: kramdown
+exclude: [node_modules,package.json, package-lock.json]

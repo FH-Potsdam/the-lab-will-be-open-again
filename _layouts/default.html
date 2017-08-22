@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{page.title}}</title>
+    <meta name="description" content="replacement for is-the-lab-open">
+    <meta name="author" content="Fabian Morón Zirfas">
+        <script type="text/javascript" src="{{site.baseurl}}/assets/js/pace.min.js"></script>
+     <link href="{{site.baseurl}}/assets/css/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/all.styles.min.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="vertical-center">
+      <div class="container">
+        <div class="row row-centered">
+          <div class="col-md-3 col-centered">
+            <h1>{{page.msg}}</h1>
+            {%if page.txt != null %}
+            <p>{{page.txt}}</p>
+            {% endif %}
+          </div>
+        </div>
+        <div class="row row-centered">
+          <div class="col-md-3 col-centered">
+          <p id="links">
+          {% for link in site.data.links  %}<span><a href="{{site.baseurl}}/{{link.url}}">{{link.txt}}</a> </span>{% if forloop.last == true %}{% else %} {% endif %}{% endfor %}{% if page.isHome != true %} <span><a href="{{site.baseurl}}/">back!</a></span>
+
+          {% endif %}
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/all.js.min.js"></script>
+  </body>
+</html>
